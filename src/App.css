@@ -28,6 +28,20 @@
   color: #61dafb;
 }
 
+container{
+  height: 100%;
+  width: 30%;
+  position: fixed;
+  z-index: 1;
+  padding: 1rem 2rem;
+  background-color: #232323;
+  transition: .5 ease;
+  overflow-x: hidden;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
