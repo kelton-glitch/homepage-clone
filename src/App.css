@@ -6,5 +6,16 @@
 }
 
 .app{
-  background-image: url(./components/images/house.jpg);
+  background-image: url(./components/images/image1.jpg);
+}
+
+.img{
+  display: flex;
+  justify-content: center;
+  max-height: 100vh;
+  max-width: 80vw;
+  text-align: center;
+  border-radius: 20px;
+  align-items: center;
+
 }

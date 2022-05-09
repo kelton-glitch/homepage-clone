@@ -4,29 +4,29 @@ import {FaBars} from 'react-icons/fa'
 
 
 export const Nav = styled.nav`
-    background: #000;
+    background: fff;
     height:80px;
     display: flex;
     justify-content: space-between;
-    padding: 0.5rem;
+    padding: 0.4rem;
     align-items:center;
-    z-index: 10;
+    z-index: 999;
     
 
-    @media screen and (max-width:800px) {
+    @media screen and (max-width:770px) {
         transition: 0.8s all ease;
     }
 `
 
 export const NavLink = styled(Link)`
-    color: #fff;
+    color: #000;
     display: flex;
     align-items: center;
     text-decoration:none;
     padding: 0 1rem;
     height:100%;
     cursor: pointer;
-    wrap:nowrap;
+    wrap: no-wrap;
 
     &.active{
         color: grey;
@@ -34,7 +34,7 @@ export const NavLink = styled(Link)`
 
      &:hover{
          transition: all 0.2s ease-in-out;
-         color: #000;
+         color: #256ce0;
      }
 `
 
@@ -42,13 +42,13 @@ export const Bars=styled(FaBars)`
     display: none;
     color:#fff;
 
-    @media screen and(max-width:760px){
+    @media screen and(max-width:770px){
         display: block;
         position:absolute;
         top:0;
         right:0;
         transform: translated (-100%, 75%);
-        font-size: 1.8rem;
+        font-size: 1rem;
         cursor:pointer;
     }
 `
@@ -58,7 +58,7 @@ export const NavMenu = styled.div`
     align-items: center;
     margin-right: 24px;
 
-    @media screen and (max-width:760px){
+    @media screen and (max-width:770px){
         display:none;
     }
 `
@@ -68,7 +68,7 @@ export const NavBtn = styled.nav`
     align-items: center;
     margin-right: 24px;
 
-    @media screen and (max-width:768px){
+    @media screen and (max-width:770px){
         display:none;
     }
 `
@@ -79,6 +79,7 @@ export const NavBtnLink = styled(Link) `
     padding: 10px 22px;
     color: #fff;
     border:none;
+    wrap: no-wrap;
     outline: none;
     cursor:pointer;
     transition: all 0.2s ease-in-out;
