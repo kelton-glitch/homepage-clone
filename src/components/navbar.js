@@ -1,16 +1,47 @@
-import React from 'react';
+import React from 'react'
+import { 
+    Nav,
+    NavLink, 
+    Bars, 
+    NavMenu,
+    NavBtn, 
+    NavBtnLink
+ } from './navcomponents';
 
-const NavBar = (props) => {
-    return(
-        <div className = "navbar">
-            <a href="#section">Home</a>
-            <a href="#section">Our Properties</a>
-            <a href="#section">Agents</a>
-            <a href="#section">Blog</a>
-            <a href="#section">Contact Us</a>
-        </div>
-    
-    );
-};
+const Navbar = () => {
+  return (
+    <>
+       <Nav>
+           <NavLink to="/">
+               <h1>Logo</h1>
+           </NavLink>
+           <Bars />
+           <NavMenu>
+               <NavLink to="/home" activeStyle>
+                   Home
+               </NavLink>
+               <NavLink to="/properties" activeStyle>
+                   Our Properties
+               </NavLink>
+               <NavLink to="/agents" activeStyle>
+                   Agents
+               </NavLink>
+               <NavLink to="/blog" activeStyle>
+                   Blog
+               </NavLink>
+               <NavLink to="/signup" activeStyle>
+                   Login/Sign Up
+               </NavLink>
+               <NavLink to="/contact-us" activeStyle>
+                   Contact Us
+               </NavLink>
+           </NavMenu>
+           <NavBtn>
+           <NavBtnLink to ="/contact-us">Contact Us</NavBtnLink>
+        </NavBtn>       
+       </Nav>
+    </>
+  )
+}
 
-export default NavBar;
+export default Navbar
