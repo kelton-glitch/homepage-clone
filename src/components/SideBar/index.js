@@ -3,7 +3,7 @@ import {
     SidebarContainer,
     Icon,
     SidebarWrapper,
-    ClosedIcon, 
+    CloseIcon, 
     SidebarMenu,
     SidebarLink,
     SideBtnWrap,
@@ -14,7 +14,7 @@ const Sidebar = () => {
   return (
     <SidebarContainer>
         <Icon>
-            <ClosedIcon />
+            <CloseIcon />
         </Icon>
         <SidebarWrapper>
             <SidebarMenu>
