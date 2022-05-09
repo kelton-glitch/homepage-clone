@@ -32,10 +32,11 @@ const Navbar = () => {
                <NavLink to="/login" activeStyle>
                    Login/Sign Up
                </NavLink>
+               <NavBtnLink to ="/contact-us">Contact Us</NavBtnLink>
            </NavMenu>
-           <NavBtn>
+           {/* <NavBtn>
            <NavBtnLink to ="/contact-us">Contact Us</NavBtnLink>
-        </NavBtn>       
+  </NavBtn> */ }    
        </Nav>
     </>
   )
