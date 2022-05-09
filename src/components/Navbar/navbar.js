@@ -11,7 +11,7 @@ import {
 const Navbar = () => {
   return (
     <>
-       <Nav>
+       <Nav >
            <NavLink to="/">
                <h1>Logo</h1>
            </NavLink>
